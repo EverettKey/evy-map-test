@@ -162,7 +162,10 @@ function makeInfoBox(controlDiv, map) {
         );
 
         // Remove old data from the heatmap when a point is removed from firebase.
-        clicks.on('child_removed', function(snapshot, prevChildKey) {
+        clicks.on('child_removed', function(snapshot, prevChild
+                                            
+                                            
+                                            ) {
           var heatmapData = heatmap.getData();
           var i = 0;
           while (snapshot.val().lat != heatmapData.getAt(i).lat()
@@ -217,7 +220,7 @@ function makeInfoBox(controlDiv, map) {
       }
     </script>
     <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjirhYf1GoKv4OWbZLa86KYGYOrFAxBds
+        src="https://maps.googleapis.com/maps/api/js?key=<key hidden>
         &libraries=visualization&callback=initMap">
     </script>
   </body>
